@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelly Bean</title>
+</head>
+<style>
+    body{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    .name{
+        height:100px;
+        font-size: 30px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        transition: all 0.6s;
+    }
+    .name:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: green;
+       
+    }
+   
+    .bean{
+        width: 300px;
+        height: 500px;
+        margin: 30px;
+        
+    }
+    .top{
+        width: 300px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        width: 150px;
+        height: 100px;
+        background-color: green;
+        border-radius: 150px 150px 0% 0%;
+       
+    }
+    .eyes{
+        width: 150px;
+        height: 100px;
+        display: flex;
+        align-items: end;
+        justify-content: space-around;
+        position: static;
+    }
+    .eye{
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 10px;
+       
+    }
+    .middle{
+        margin-top: 15px;
+        width: 300px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .hand{
+        width: 30px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: green;
+        margin: 10px;
+       
+    }
+    .jbody{
+        width: 150px;
+        height: 150px;
+        border-radius: 0px 0px 50px 50px;
+        background-color: green;
+        margin-top: 10px;
+        transition: all 1s;
+    }
+    .bottom{
+        width: 300px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    .leg{
+        width: 30px;
+        height: 100px;
+        border-radius: 20px;
+        background-color: green;
+        margin: 10px 20px;
+    }
+    .bean:hover{
+       
+    body{
+        background-color: aqua;
+        }
+    .head{
+        animation: head 2s linear 0s infinite;
+        transition: all 0.4s;
+    }
+    .hand{
+        margin: 10px;
+        animation: dan 3s linear 0s infinite backwards ;
+        transition: all 0.8s;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+    .leg{
+        margin: 40px;
+        animation: dan 3s linear 0s infinite ;
+        transition: all 0.8s;
+    }
+    .jbody{
+       width: 130px;
+        height: 130px;
+        margin: 10px 20px 0px 20px;
+        border-radius: 20px;
+          animation: dance 3s linear 0s infinite ;
+       
+    }
+   
+}
+@keyframes head {
+        0%{width: 200px; background-color: pink;}
+        50%{ width: 150px; background-color: pink;}
+        100%{width: 200px; background-color: pink;}    
+}
+@keyframes dance {
+        0%{transform: rotate(0deg); background-color: pink;}
+        100%{ transform: rotate(360deg); background-color: pink;}
+    }
+    @keyframes dan {
+        0%{transform: rotate(0deg);background-color: pink;}
+
+        50%{ transform: rotate(30deg);background-color: pink;}
+        100%{ transform: rotate(-30deg);background-color: pink;}
+    }
+    
+</style>
+<body>
+   <div class="name">Jelly Bean</div>
+    <div class="bean">
+        <div class="top">
+        <div class="head">
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+        </div>
+    </div>
+        <div class="middle">
+            <div class="hand"></div>
+            <div class="jbody"></div>
+            <div class="hand"></div>
+        </div>
+        <div class="bottom">
+            <div class="leg"></div>
+            <div class="leg"></div>
+        </div>
+    </div>
+</body>
+</html>
